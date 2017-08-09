@@ -7,6 +7,8 @@
   -------------------------------------------------------------------
 
   Find the Longest Word in a String
+  
+  instructions:
 
   Return the length of the longest word in the provided sentence.
 
