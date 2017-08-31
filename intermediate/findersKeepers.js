@@ -23,7 +23,8 @@ function findElement(arr, func) {
   }
   return undefined;
 }
- // some testing
+
+// some testing
 console.log(findElement([1, 2, 3, 4], num => (num % 2 === 0))); // should return 2.
 console.log(findElement([1, 3, 5, 8, 9, 10], num => (num % 2 === 0))); // should return 8.
 console.log(findElement([1, 3, 5, 9], num => (num % 2 === 0))); // should return undefined.
