@@ -39,9 +39,9 @@ function addTogether() {
     if(checkNum(a)) {
       return b => {
         if(a === undefined || checkNum(b) === undefined) {
-        return undefined;
+          return undefined;
         } else {
-        return a+b;
+          return a+b;
         }
       };
     }
