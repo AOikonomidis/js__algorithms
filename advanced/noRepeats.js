@@ -6,7 +6,7 @@
 
   -------------------------------------------------------------------
 
-  No repeats please
+  No Repeats Please
 
   instructions:
 
