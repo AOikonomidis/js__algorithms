@@ -21,11 +21,7 @@ function confirmEnding(str, target) {
   var indexStr = str.length;
   var indexTar = target.length;
   
-  if (str.substring(indexStr-indexTar, indexStr) === target) {
-    return true;
-  }
-  
-  return false;
+  return str.substring(indexStr-indexTar, indexStr) === target;
 }
 
 // some testing
