@@ -24,20 +24,19 @@
   non-alphabetic character (i.e. spaces, punctuation), 
   but do pass them on.
 
-
-
 */
 
 function rot13(str) { // LBH QVQ VG!
   str = str.toUpperCase();
-  var arr = [];
-  var finalArr = [];
-  var code;
-  for(var i=0; i<str.length; i++) {
+  let arr = [];
+  let finalArr = [];
+  let code;
+  
+  for(let i=0; i<str.length; i++) {
     arr.push(str.charCodeAt(i));
   }
   
-  for(var j=0; j<arr.length; j++) {
+  for(let j=0; j<arr.length; j++) {
     code = arr[j];
     if(arr[j]>=65 && arr[j]<=90) {
       code = (arr[j]-65+13)%26+65;
@@ -45,8 +44,7 @@ function rot13(str) { // LBH QVQ VG!
     finalArr.push(String.fromCharCode(code));
   }
   
-  finalArr = finalArr.join('');
-  return finalArr;
+  return finalArr.join('');
 }
 
 // some testing
