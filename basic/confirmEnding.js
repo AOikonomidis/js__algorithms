@@ -16,10 +16,9 @@
 */
 
 function confirmEnding(str, target) {
-  // "Never give up and good luck will find you."
-  // -- Falcor
-  var indexStr = str.length;
-  var indexTar = target.length;
+  // "Never give up and good luck will find you." ~ Falcor
+  let indexStr = str.length;
+  let indexTar = target.length;
   
   return str.substring(indexStr-indexTar, indexStr) === target;
 }
