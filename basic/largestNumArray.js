@@ -17,15 +17,14 @@
 */
 
 function largestNum(arr) {
-  
-  var max = [];
+  let max = [];
   // initializing the max array
-  for (var k=0; k<arr.length; k++) {
+  for (let k=0; k<arr.length; k++) {
     max.push(-1);
   }
   
-  for (var i=0; i<arr.length; i++) {
-    for (j=0; j<arr[i].length; j++) {
+  for (let i=0; i<arr.length; i++) {
+    for (let j=0; j<arr[i].length; j++) {
       if (arr[i][j] > max[i]) {
         max[i] = arr[i][j];
       }
