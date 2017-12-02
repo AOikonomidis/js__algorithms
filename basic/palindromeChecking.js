@@ -19,11 +19,11 @@
 
 */
 
-function palindrome(str) {
+let palindrome = str => {
   // Good luck!
   let palStr = str.toLowerCase().replace(/[^a-z|0-9]/g, "").split("").reverse().join("");
   return str.toLowerCase().replace(/[^a-z|0-9]/g, "") === palStr;
-}
+};
 
 // some testing
 console.log(palindrome("eye")); // should return true.
