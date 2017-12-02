@@ -21,14 +21,8 @@
 
 function palindrome(str) {
   // Good luck!
-  var palStr;
-  palStr = str.toLowerCase().replace(/[^a-z|0-9]/g, "").split("").reverse().join("");
-  
-  if (str.toLowerCase().replace(/[^a-z|0-9]/g, "") === palStr) {
-    return true;
-  }
-  
-  return false;
+  let palStr = str.toLowerCase().replace(/[^a-z|0-9]/g, "").split("").reverse().join("");
+  return str.toLowerCase().replace(/[^a-z|0-9]/g, "") === palStr;
 }
 
 // some testing
